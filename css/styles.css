@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Opcional: Estilo para la barra de desplazamiento */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #1F2937;
+}
+::-webkit-scrollbar-thumb {
+    background: #3B82F6;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #2563EB;
+}

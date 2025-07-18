@@ -17,10 +17,10 @@
     <header id="navbar"
         class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-[#121212]/80 backdrop-blur-sm shadow-lg">
         <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="/index.html" class="flex items-center space-x-3"><img src="img/logoPoltech.svg" class="h-14 w-auto"
+            <a href="index.html" class="flex items-center space-x-3"><img src="img/logoPoltech.svg" class="h-14 w-auto"
                     alt="POLTECH Logo" /><span class="text-3xl font-bold text-white">POLTECH</span></a>
             <ul class="hidden md:flex items-center space-x-8">
-                <li><a href="/index.html" class="flex items-center hover:text-green-400 transition"><i
+                <li><a href="index.html" class="flex items-center hover:text-green-400 transition"><i
                             class="bi bi-house-door-fill mr-2"></i>INICIO</a></li>
                 <li><a href="nosotros.html" class="flex items-center hover:text-green-400 transition"><i
                             class="bi bi-people-fill mr-2"></i>NOSOTROS</a></li>
@@ -30,8 +30,14 @@
                 <li><a href="servicios.html" class="flex items-center hover:text-green-400 transition"><i
                             class="bi bi-gear-fill mr-2"></i>SERVICIOS</a></li>
             </ul>
-            <a href="registro.html"
-                class="hidden md:inline-block bg-green-500 hover:bg-green-600 text-gray-900 font-bold py-2 px-5 rounded-full transition-transform hover:scale-105">Regístrate</a>
+            <div class="flex items-center space-x-4">
+                <a href="carrito.html"
+                    class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-5 rounded-full transition-transform hover:scale-105 flex items-center">
+                    <i class="bi bi-cart-fill mr-2"></i>Carrito
+                </a>
+                <a href="registro.html"
+                    class="hidden md:inline-block bg-green-500 hover:bg-green-600 text-gray-900 font-bold py-2 px-5 rounded-full transition-transform hover:scale-105">Regístrate</a>
+            </div>
         </nav>
     </header>
 
@@ -70,9 +76,13 @@
                 <div class="p-5">
                     <h3 class="text-lg font-bold text-white mb-2 h-16">Laptop Gaming de Alto Rendimiento</h3>
                     <p class="text-2xl font-bold text-green-400 mb-4">$1899.00</p>
-                    <button
-                        class="w-full bg-green-500 hover:bg-green-600 text-gray-900 font-bold py-2 rounded-lg transition">Añadir
-                        al carrito</button>
+                    <button class="w-full bg-green-500 hover:bg-green-600 text-gray-900 font-bold py-2 rounded-lg transition add-to-cart-btn"
+                        data-product-id="1"
+                        data-product-name="Laptop Gaming de Alto Rendimiento"
+                        data-product-price="1899.00"
+                        data-product-image="https://img.europapress.es/fotoweb/fotonoticia_20220517180355_690.jpg">
+                        Añadir al carrito
+                    </button>
                 </div>
             </div>
             <div class="bg-[#1a1a1a] rounded-xl shadow-lg overflow-hidden group">
@@ -86,9 +96,13 @@
                 <div class="p-5">
                     <h3 class="text-lg font-bold text-white mb-2 h-16">Monitor Curvo Ultra-Wide 144Hz</h3>
                     <p class="text-2xl font-bold text-green-400 mb-4">$499.00</p>
-                    <button
-                        class="w-full bg-green-500 hover:bg-green-600 text-gray-900 font-bold py-2 rounded-lg transition">Añadir
-                        al carrito</button>
+                    <button class="w-full bg-green-500 hover:bg-green-600 text-gray-900 font-bold py-2 rounded-lg transition add-to-cart-btn"
+                        data-product-id="2"
+                        data-product-name="Monitor Curvo Ultra-Wide 144Hz"
+                        data-product-price="499.00"
+                        data-product-image="img/monitor.png">
+                        Añadir al carrito
+                    </button>
                 </div>
             </div>
             <div class="bg-[#1a1a1a] rounded-xl shadow-lg overflow-hidden group">
@@ -102,9 +116,13 @@
                 <div class="p-5">
                     <h3 class="text-lg font-bold text-white mb-2 h-16">SSD NVMe de 1TB Ultra Rápido</h3>
                     <p class="text-2xl font-bold text-green-400 mb-4">$119.00</p>
-                    <button
-                        class="w-full bg-green-500 hover:bg-green-600 text-gray-900 font-bold py-2 rounded-lg transition">Añadir
-                        al carrito</button>
+                    <button class="w-full bg-green-500 hover:bg-green-600 text-gray-900 font-bold py-2 rounded-lg transition add-to-cart-btn"
+                        data-product-id="3"
+                        data-product-name="SSD NVMe de 1TB Ultra Rápido"
+                        data-product-price="119.00"
+                        data-product-image="https://maxxicomp.com/1048-large_default/disco-duro-kingston-1tb-m2-ssd-nv1-35x-pcie-snvs-1000g.jpg">
+                        Añadir al carrito
+                    </button>
                 </div>
             </div>
             <div class="bg-[#1a1a1a] rounded-xl shadow-lg overflow-hidden group">
@@ -118,9 +136,13 @@
                 <div class="p-5">
                     <h3 class="text-lg font-bold text-white mb-2 h-16">Tarjeta Gráfica RTX 4070 Ti Super</h3>
                     <p class="text-2xl font-bold text-green-400 mb-4">$799.00</p>
-                    <button
-                        class="w-full bg-green-500 hover:bg-green-600 text-gray-900 font-bold py-2 rounded-lg transition">Añadir
-                        al carrito</button>
+                    <button class="w-full bg-green-500 hover:bg-green-600 text-gray-900 font-bold py-2 rounded-lg transition add-to-cart-btn"
+                        data-product-id="4"
+                        data-product-name="Tarjeta Gráfica RTX 4070 Ti Super"
+                        data-product-price="799.00"
+                        data-product-image="https://m.media-amazon.com/images/I/71-EuupM1uL.jpg">
+                        Añadir al carrito
+                    </button>
                 </div>
             </div>
         </div>
@@ -138,9 +160,13 @@
                 <div class="p-5">
                     <h3 class="text-lg font-bold text-white mb-2 h-16">Cámara SONY con Obturador Profesional</h3>
                     <p class="text-2xl font-bold text-green-400 mb-4">$1299.00</p>
-                    <button
-                        class="w-full bg-green-500 hover:bg-green-600 text-gray-900 font-bold py-2 rounded-lg transition">Añadir
-                        al carrito</button>
+                    <button class="w-full bg-green-500 hover:bg-green-600 text-gray-900 font-bold py-2 rounded-lg transition add-to-cart-btn"
+                        data-product-id="5"
+                        data-product-name="Cámara SONY con Obturador Profesional"
+                        data-product-price="1299.00"
+                        data-product-image="img/camara.png">
+                        Añadir al carrito
+                    </button>
                 </div>
             </div>
             <div class="bg-[#1a1a1a] rounded-xl shadow-lg overflow-hidden group">
@@ -154,9 +180,13 @@
                 <div class="p-5">
                     <h3 class="text-lg font-bold text-white mb-2 h-16">Drone Plegable con Cámara 4K</h3>
                     <p class="text-2xl font-bold text-green-400 mb-4">$349.00</p>
-                    <button
-                        class="w-full bg-green-500 hover:bg-green-600 text-gray-900 font-bold py-2 rounded-lg transition">Añadir
-                        al carrito</button>
+                    <button class="w-full bg-green-500 hover:bg-green-600 text-gray-900 font-bold py-2 rounded-lg transition add-to-cart-btn"
+                        data-product-id="6"
+                        data-product-name="Drone Plegable con Cámara 4K"
+                        data-product-price="349.00"
+                        data-product-image="img/drone.png">
+                        Añadir al carrito
+                    </button>
                 </div>
             </div>
             <div class="bg-[#1a1a1a] rounded-xl shadow-lg overflow-hidden group">
@@ -170,9 +200,13 @@
                 <div class="p-5">
                     <h3 class="text-lg font-bold text-white mb-2 h-16">Teclado Mecánico RGB Gaming</h3>
                     <p class="text-2xl font-bold text-green-400 mb-4">$79.99</p>
-                    <button
-                        class="w-full bg-green-500 hover:bg-green-600 text-gray-900 font-bold py-2 rounded-lg transition">Añadir
-                        al carrito</button>
+                    <button class="w-full bg-green-500 hover:bg-green-600 text-gray-900 font-bold py-2 rounded-lg transition add-to-cart-btn"
+                        data-product-id="7"
+                        data-product-name="Teclado Mecánico RGB Gaming"
+                        data-product-price="79.99"
+                        data-product-image="img/teclado.png">
+                        Añadir al carrito
+                    </button>
                 </div>
             </div>
             <div class="bg-[#1a1a1a] rounded-xl shadow-lg overflow-hidden group">
@@ -186,9 +220,13 @@
                 <div class="p-5">
                     <h3 class="text-lg font-bold text-white mb-2 h-16">Auriculares con Cancelación de Ruido</h3>
                     <p class="text-2xl font-bold text-green-400 mb-4">$149.00</p>
-                    <button
-                        class="w-full bg-green-500 hover:bg-green-600 text-gray-900 font-bold py-2 rounded-lg transition">Añadir
-                        al carrito</button>
+                    <button class="w-full bg-green-500 hover:bg-green-600 text-gray-900 font-bold py-2 rounded-lg transition add-to-cart-btn"
+                        data-product-id="8"
+                        data-product-name="Auriculares con Cancelación de Ruido"
+                        data-product-price="149.00"
+                        data-product-image="img/audi.png">
+                        Añadir al carrito
+                    </button>
                 </div>
             </div>
             <div class="bg-[#1a1a1a] rounded-xl shadow-lg overflow-hidden group">
@@ -202,9 +240,13 @@
                 <div class="p-5">
                     <h3 class="text-lg font-bold text-white mb-2 h-16">Mouse Gaming con Iluminación RGB</h3>
                     <p class="text-2xl font-bold text-green-400 mb-4">$49.99</p>
-                    <button
-                        class="w-full bg-green-500 hover:bg-green-600 text-gray-900 font-bold py-2 rounded-lg transition">Añadir
-                        al carrito</button>
+                    <button class="w-full bg-green-500 hover:bg-green-600 text-gray-900 font-bold py-2 rounded-lg transition add-to-cart-btn"
+                        data-product-id="9"
+                        data-product-name="Mouse Gaming con Iluminación RGB"
+                        data-product-price="49.99"
+                        data-product-image="https://nanotech-market.com/wp-content/uploads/2024/09/Lime-Green-and-Black-Active-Hype-Personal-Fitness-Coach-Instagram-Post-2023-06-14T163953.000-1.png">
+                        Añadir al carrito
+                    </button>
                 </div>
             </div>
             <div class="bg-[#1a1a1a] rounded-xl shadow-lg overflow-hidden group">
@@ -218,9 +260,13 @@
                 <div class="p-5">
                     <h3 class="text-lg font-bold text-white mb-2 h-16">Router Wi-Fi 6 de Alta Velocidad</h3>
                     <p class="text-2xl font-bold text-green-400 mb-4">$89.00</p>
-                    <button
-                        class="w-full bg-green-500 hover:bg-green-600 text-gray-900 font-bold py-2 rounded-lg transition">Añadir
-                        al carrito</button>
+                    <button class="w-full bg-green-500 hover:bg-green-600 text-gray-900 font-bold py-2 rounded-lg transition add-to-cart-btn"
+                        data-product-id="10"
+                        data-product-name="Router Wi-Fi 6 de Alta Velocidad"
+                        data-product-price="89.00"
+                        data-product-image="img/router.png">
+                        Añadir al carrito
+                    </button>
                 </div>
             </div>
             <div class="bg-[#1a1a1a] rounded-xl shadow-lg overflow-hidden group">
@@ -234,9 +280,13 @@
                 <div class="p-5">
                     <h3 class="text-lg font-bold text-white mb-2 h-16">Webcam 4K con Micrófono Integrado</h3>
                     <p class="text-2xl font-bold text-green-400 mb-4">$65.00</p>
-                    <button
-                        class="w-full bg-green-500 hover:bg-green-600 text-gray-900 font-bold py-2 rounded-lg transition">Añadir
-                        al carrito</button>
+                    <button class="w-full bg-green-500 hover:bg-green-600 text-gray-900 font-bold py-2 rounded-lg transition add-to-cart-btn"
+                        data-product-id="11"
+                        data-product-name="Webcam 4K con Micrófono Integrado"
+                        data-product-price="65.00"
+                        data-product-image="https://i.blogs.es/5ecf1c/dell-ultrasharp-webcam/450_1000.jpeg">
+                        Añadir al carrito
+                    </button>
                 </div>
             </div>
             <div class="bg-[#1a1a1a] rounded-xl shadow-lg overflow-hidden group">
@@ -250,19 +300,58 @@
                 <div class="p-5">
                     <h3 class="text-lg font-bold text-white mb-2 h-16">Impresora Multifunción Inalámbrica</h3>
                     <p class="text-2xl font-bold text-green-400 mb-4">$199.00</p>
-                    <button
-                        class="w-full bg-green-500 hover:bg-green-600 text-gray-900 font-bold py-2 rounded-lg transition">Añadir
-                        al carrito</button>
+                    <button class="w-full bg-green-500 hover:bg-green-600 text-gray-900 font-bold py-2 rounded-lg transition add-to-cart-btn"
+                        data-product-id="12"
+                        data-product-name="Impresora Multifunción Inalámbrica"
+                        data-product-price="199.00"
+                        data-product-image="img/impresora.png">
+                        Añadir al carrito
+                    </button>
                 </div>
             </div>
         </div>
     </main>
 
-    <footer class="bg-[#1a1a1a] border-t border-gray-800 mt-12">
-        <div class="container mx-auto px-6 py-8 text-center text-gray-500">
-            <p>&copy; 2025 POLTECH QUITO™. Todos los derechos reservados.</p>
+    <footer class="bg-[#1a1a1a] border-t border-gray-800">
+        <div class="container mx-auto px-6 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+                <div>
+                    <a href="index.html" class="flex items-center justify-center md:justify-start space-x-3 mb-4">
+                        <img src="img/logoPoltech.svg" class="h-12 w-auto" alt="POLTECH Logo">
+                        <span class="text-2xl font-bold text-white">POLTECH</span>
+                    </a>
+                    <p class="text-gray-400">Tecnología de vanguardia y soluciones expertas en Quito, Ecuador.</p>
+                </div>
+                <div>
+                    <h3 class="font-bold text-white text-lg mb-4">Enlaces Rápidos</h3>
+                    <ul class="space-y-2">
+                        <li><a href="nosotros.html" class="text-gray-400 hover:text-green-400">Nosotros</a></li>
+                        <li><a href="productos.html" class="text-gray-400 hover:text-green-400">Productos</a></li>
+                        <li><a href="servicios.html" class="text-gray-400 hover:text-green-400">Servicios</a></li>
+                        <li><a href="registro.html" class="text-gray-400 hover:text-green-400">Registro</a></li>
+                        <li><a href="carrito.html" class="text-gray-400 hover:text-green-400">Carrito</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold text-white text-lg mb-4">Síguenos</h3>
+                    <div class="flex justify-center md:justify-start space-x-6">
+                        <a href="#" class="text-gray-400 hover:text-green-400 text-2xl"><i
+                                class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-green-400 text-2xl"><i
+                                class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-green-400 text-2xl"><i class="bi bi-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center text-gray-500 mt-10 pt-8 border-t border-gray-700">
+                <p>&copy; 2025 POLTECH QUITO™. Todos los derechos reservados.</p>
+            </div>
         </div>
     </footer>
+    <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-auth-compat.js"></script>
+    <script src="js/carrito.js"></script>
 </body>
 
 </html>
